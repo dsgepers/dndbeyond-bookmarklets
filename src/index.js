@@ -6,7 +6,7 @@ import * as serviceWorker from './serviceWorker';
 
 
 console.log(document.getElementById('bookmarklet-root'));
-ReactDOM.render(<App />, document.getElementById('bookmarklet-root'));
+ReactDOM.render(<App links={document.getElementById('bookmarklet-root').getAttribute("data-links")} />, document.getElementById('bookmarklet-root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
