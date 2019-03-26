@@ -38,15 +38,17 @@ class Player extends Component {
     }
 
   render() {
-        const level = this.state.player.character.classes.reduce((a, b) => a + b);
-        const maxHp = this.state.player.character.baseHitPoints + (this.modifiers[this.state.player.character.stats[3].value] * level);
-        const currentHp = maxHp - this.state.player.removedHitPoints;
-    return (
-      <div className="Player">
-          Name: { this.state.player.character.name }<br/>
-          HP: {currentHp} / { maxHp }
-      </div>
-    );
+        if (this.state.player != undefined) {
+            const level = this.state.player.character.classes.reduce((a, b) => a + b);
+            const maxHp = this.state.player.character.baseHitPoints + (this.modifiers[this.state.player.character.stats[3].value] * level);
+            const currentHp = maxHp - this.state.player.removedHitPoints;
+            return (
+              <div className="Player">
+                  Name: { this.state.player.character.name }<br/>
+                  HP: {currentHp} / { maxHp }
+              </div>
+            );
+        }
   }
 }
 
