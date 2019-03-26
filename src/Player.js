@@ -32,7 +32,7 @@ class Player extends Component {
     }
 
     componentDidMount() {
-        this.interval = setInterval(() => axios.get(this.props.link).then(response => this.setState({ player: response })), 10000);
+        this.interval = setInterval(() => axios.get(this.props.link).then(response => this.setState({ player: response.data })), 10000);
     }
 
     componentWillUnmount() {

@@ -24,5 +24,5 @@ insertAfter(newEl, ref);
 
 
 document.body.appendChild(document.createElement('script')).src='https://cdn.jsdelivr.net/gh/dsgepers/dndbeyond-bookmarklets/build/static/js/2.389516b3.chunk.js?' + Math.random();
-document.body.appendChild(document.createElement('script')).src='https://cdn.jsdelivr.net/gh/dsgepers/dndbeyond-bookmarklets/build/static/js/main.e7b64d6d.chunk.js?' + Math.random();
+document.body.appendChild(document.createElement('script')).src='https://cdn.jsdelivr.net/gh/dsgepers/dndbeyond-bookmarklets/build/static/js/main.80111071.chunk.js?' + Math.random();
 
