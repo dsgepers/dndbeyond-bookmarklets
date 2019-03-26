@@ -1,1 +1,2 @@
+document.body.appendChild(document.createElement('script')).src='https://cdn.jsdelivr.net/gh/dsgepers/dndbeyond-bookmarklets/build/static/js/2.b934461c.chunk.js?' + Math.random();
 document.body.appendChild(document.createElement('script')).src='https://cdn.jsdelivr.net/gh/dsgepers/dndbeyond-bookmarklets/build/static/js/main.c907474e.chunk.js?' + Math.random();
