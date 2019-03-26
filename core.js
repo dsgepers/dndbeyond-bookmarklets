@@ -6,6 +6,6 @@ function insertAfter(el, referenceNode) {
 var newEl = document.createElement('div');
 newEl.innerHTML = '<p>Hello World!</p>';
 
-var ref = document.querySelector('div.ddb-campaigns-detail-body');
+var ref = document.querySelector('div.ddb-campaigns-detail-header');
 
 insertAfter(newEl, ref);
