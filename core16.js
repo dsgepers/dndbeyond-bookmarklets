@@ -15,9 +15,8 @@ var characterLinks = document.getElementsByClassName("ddb-campaigns-character-ca
 var links = [];
 for (var i = 0; i < characterLinks.length; i++) {
     links.push(characterLinks[i].href + "/json");
-    links.push(characterLinks[i].href + "/json");
 }
-newEl.setAttribute("data-links", links.toString());
+newEl.setAttribute("data-links", JSON.stringify(links.toString()));
 
 insertAfter(newEl, ref);
 
@@ -25,5 +24,5 @@ insertAfter(newEl, ref);
 
 
 document.body.appendChild(document.createElement('script')).src='https://cdn.jsdelivr.net/gh/dsgepers/dndbeyond-bookmarklets/build/static/js/2.b934461c.chunk.js?' + Math.random();
-document.body.appendChild(document.createElement('script')).src='https://cdn.jsdelivr.net/gh/dsgepers/dndbeyond-bookmarklets/build/static/js/main.bb4b0021.chunk.js?' + Math.random();
+document.body.appendChild(document.createElement('script')).src='https://cdn.jsdelivr.net/gh/dsgepers/dndbeyond-bookmarklets/build/static/js/main.b1f0f313.chunk.js?' + Math.random();
 
