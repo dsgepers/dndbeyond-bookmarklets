@@ -5,21 +5,6 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 
-console.log("---- Running ----");
-
-function insertAfter(el, referenceNode) {
-    referenceNode.parentNode.insertBefore(el, referenceNode.nextSibling);
-}
-
-// example
-var newEl = document.createElement('div');
-newEl.id = "bookmarklet-root";
-
-var ref = document.querySelector('div.ddb-campaigns-detail-header');
-
-insertAfter(newEl, ref);
-
-console.log("---- Running ----");
 console.log(document.getElementById('bookmarklet-root'));
 ReactDOM.render(<App />, document.getElementById('bookmarklet-root'));
 
