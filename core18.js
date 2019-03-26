@@ -14,8 +14,7 @@ var characterLinks = document.getElementsByClassName("ddb-campaigns-character-ca
 
 var links = [];
 for (var i = 0; i < characterLinks.length; i++) {
-    links.push(characterLinks[i].href + "/json");
-    links.push(characterLinks[i].href + "/json");
+    links.push({ url: characterLinks[i].href + "/json" } );
 }
 newEl.setAttribute("data-links", JSON.stringify(links.toString()));
 
