@@ -42,9 +42,13 @@ class Player extends Component {
   render() {
         if (this.state.player != undefined) {
             console.log(this.state.player);
-            const level = this.state.player.character.classes.reduce((a, b) => a + b);
+            const level = this.state.player.character.classes.reduce((a, b) => a.level + b);
             const maxHp = this.state.player.character.baseHitPoints + (this.modifiers[this.state.player.character.stats[3].value] * level);
             const currentHp = maxHp - this.state.player.removedHitPoints;
+
+            console.log(level);
+            console.log(maxHp);
+            console.log(currentHp);
             return (
                 <div className="Player">
                     Name: {this.state.player.character.name}<br/>
