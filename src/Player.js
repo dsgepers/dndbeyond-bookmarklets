@@ -46,9 +46,9 @@ class Player extends Component {
             const maxHp = this.state.player.character.baseHitPoints + (this.modifiers[this.state.player.character.stats[3].value] * level);
             const currentHp = maxHp - this.state.player.character.removedHitPoints;
 
-            console.log(level);
-            console.log(maxHp);
-            console.log(currentHp);
+            console.log(this.state.player.character.baseHitPoints);
+            console.log(this.state.player.character.stats[3].value);
+            console.log(this.modifiers[this.state.player.character.stats[3].value]);
             return (
                 <div className="Player">
                     Name: {this.state.player.character.name}<br/>
