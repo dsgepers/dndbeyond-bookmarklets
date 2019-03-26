@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Player from "./Player";
 
 class App extends Component {
   render() {
@@ -21,6 +22,10 @@ class App extends Component {
             Learn React
           </a>
         </header>
+          {this.props.links.map((link, i) => {
+              // Return the element. Also pass key
+              return (<Player key={i} link={link} />)
+          })}
       </div>
     );
   }
