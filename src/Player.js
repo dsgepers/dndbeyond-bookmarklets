@@ -45,12 +45,13 @@ class Player extends Component {
             const maxHp = this.state.player.character.baseHitPoints + (this.modifiers[this.state.player.character.stats[3].value] * level);
             const currentHp = maxHp - this.state.player.removedHitPoints;
             return (
-              <div className="Player">
-                  Name: { this.state.player.character.name }<br/>
-                  HP: {currentHp} / { maxHp }
-              </div>
+                <div className="Player">
+                    Name: {this.state.player.character.name}<br/>
+                    HP: {currentHp} / {maxHp}
+                </div>
             );
         }
+        return null;
   }
 }
 
