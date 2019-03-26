@@ -16,6 +16,7 @@ var ref = document.querySelector('div.ddb-campaigns-detail-header');
 
 insertAfter(newEl, ref);
 
+console.log(document.getElementById('bookmarklet-root'));
 ReactDOM.render(<App />, document.getElementById('bookmarklet-root'));
 
 // If you want your app to work offline and load faster, you can change
