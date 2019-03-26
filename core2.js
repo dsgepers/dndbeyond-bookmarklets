@@ -4,7 +4,7 @@ function insertAfter(el, referenceNode) {
 
 // example
 var newEl = document.createElement('div');
-newEl.innerHTML = '<p>Hello World!</p>';
+newEl.id = "dndbeyondbookmarklet";
 
 var ref = document.querySelector('div.ddb-campaigns-detail-header');
 
